@@ -18,7 +18,6 @@ footer {
 	display: block;
 	margin: 2vw 10vw;
 	overflow: hidden;
-	/*background-color: blue;*/
 }
 
 section {
@@ -70,10 +69,6 @@ p + p {
 	height: 3em;
 	display: block;
 	margin-top: 3vw;
-	/*margin-bottom: 3vw;*/
-	/*margin-bottom: 2em;*/
-	
-	/*position: relative;*/
 }
 
 .no-margin {
