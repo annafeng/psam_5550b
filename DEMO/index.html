@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>It takes an awfully long unit to make an awfully long egg</title>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+	<div id="wrapper">
+
+	<h1 class="title">It takes an awfully long unit to make an awfully long egg</h1><br>
+
+	<section>
+		<h1>Length</h1>
+		<p>The length CSS data type represents a distance value. Lengths can be used in numerous CSS properties, such as width, height, margin, padding, border-width, font-size, and text-shadow.</p>
+		<p>The length data type consists of a number followed by one of the units listed below. For some CSS properties, negative lengths are allowed.</p>
+	</section>
+
+	<section>
+		<h1>Relative length units</h1>
+		<p>Relative length units specify a length relative to another length property. Depending on the unit, this can be the size of a specific character, the line height, or the size of the viewport.</p>
+
+		<h2>Font-relative units</h2>
+		<ul>
+			<li>• em: relative to the font-size of the element (e.g. if the font-size of the document is 12pt, 1em is equal to 12pt)</li>
+			<li>• rem: relative to the font-size of the root element (which is the html element in HTML documents)</li>
+			<li>• ex: relative to the x-height of the current font</li>
+			<li>• ch: relative to width of the “0”</li>
+		</ul>
+
+		<h2>Viewport-percentage units</h2>
+		<ul>
+			<li>• vw: relative to 1% of the width of viewport</li>
+			<li>• vh: relative to 1% of the height of viewport</li>
+			<li>• vmin: relative to 1% of viewport’s smaller dimension</li>
+			<li>• vmax: relative to 1% of viewport’s larger dimension</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Using em</h2>
+		<p>What happens when you nest em-defined font sizes inside each other? Each div inherits its font-size from its parent, giving us gradually increasing font-sizes.</p>
+
+		<div class="example">
+			<div class="using-em">
+				2em
+				<div class="using-em">
+					2em
+					<div class="using-em">
+						2em
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>Using rem</h2>
+		<p>What happens when you nest rem-defined font sizes inside each other? Each div inherits its font-size from the root element, giving us the same font-sizes.</p>
+
+		<div class="example">
+			<div class="using-rem">
+				2rem
+				<div class="using-rem">
+					2rem
+					<div class="using-rem">
+						2rem
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h1>Absolute length units</h1>
+		<p>Absolute length units represent a physical measurement when the physical properties of the output medium are known, such as for print layout. The absolute length units are fixed and a length expressed in any of these will appear as exactly that size. <!-- This is done by anchoring one of the units to a physical unit, and then defining the others relative to it. The anchor is done differently for low-resolution devices, such as screens, versus high-resolution devices, such as printers.</p>
+		<p>For low-dpi devices, the unit px represents the physical reference pixel; other units are defined relative to it. Thus, 1in is defined as 96px, which equals 72pt. The consequence of this definition is that on such devices, dimensions described in inches (in), centimeters (cm), or millimeters (mm) doesn't necessary match the size of the physical unit with the same name.</p>
+		<p>For high-dpi devices, inches (in), centimeters (cm), and millimeters (mm) are the same as their physical counterparts. Therefore, the px unit is defined relative to them (1/96 of 1 inch).</p> -->
+		<p>Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.</p>
+
+		<h2>Units</h2>
+		<ul>
+			<li>• px</li>
+			<li>• cm</li>
+			<li>• mm</li>
+			<li>• in</li>
+			<li>• pc</li>
+			<li>• pt</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Specifying widths</h2>
+
+		<div class="egg em no-margin">
+			<img src="LONG_EGG.png">
+		</div>
+			20em
+		
+		<div class="egg rem">
+			<img src="LONG_EGG.png">
+		</div>
+			20rem
+
+		<div class="egg ex">
+			<img src="LONG_EGG.png">
+		</div>
+			20ex
+		
+		<div class="egg ch">
+			<img src="LONG_EGG.png">
+		</div>
+			20ch
+		
+		<div class="egg vw">
+			<img src="LONG_EGG.png">
+		</div>
+			20vw
+
+		<div class="egg vh">
+			<img src="LONG_EGG.png">
+		</div>
+			20vh
+
+		<div class="egg vmin">
+			<img src="LONG_EGG.png">
+		</div>
+			20vmin
+
+		<div class="egg vmax">
+			<img src="LONG_EGG.png">
+		</div>
+			20vmax
+		
+		<div class="egg px">
+			<img src="LONG_EGG.png">
+		</div>
+			20px
+
+		<div class="egg cm">
+			<img src="LONG_EGG.png">
+		</div>
+			20cm
+
+		<div class="egg mm">
+			<img src="LONG_EGG.png">
+		</div>
+			20mm
+
+		<div class="egg in">
+			<img src="LONG_EGG.png">
+		</div>
+			20in
+
+		<div class="egg pc">
+			<img src="LONG_EGG.png">
+		</div>
+			20pc
+		
+		<div class="egg pt">
+			<img src="LONG_EGG.png">
+		</div>
+			20pt
+		</section>
+		
+		<!-- <h1>Border thickness</h1> -->
+
+	<section>
+		<h2>Specifying letter spacing</h2>
+			<div class="example em no-margin">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20em</p>
+			</div>
+			<div class="example rem">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20rem</p>
+			</div>
+			<div class="example ex">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20ex</p>
+			</div>
+			<div class="example ch">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20ch</p>
+			</div>
+			<div class="example vw">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20vw</p>
+			</div>
+			<div class="example vh">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20vh</p>
+			</div>
+			<div class="example vmin">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20vmin</p>
+			</div>
+			<div class="example vmax">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20vmax</p>
+			</div>
+			<div class="example px">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20px</p>
+			</div>
+			<div class="example cm">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20cm</p>
+			</div>
+			<div class="example mm">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20mm</p>
+			</div>
+			<div class="example in">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20in</p>
+			</div>
+			<div class="example pc">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20pc</p>
+			</div>
+			<div class="example pt">
+				Long eggs are produced by a Danish company Dansk Andels for the service industry, i.e. caterers, restaurants and airlines. On November 10th, 2013, YouTuber Laura Yuile posted a video about the production of Long Eggs. Within four years, the video has received more than 2.9 million views.
+				<p class="reg-letter-spacing">20pt</p>
+			</div>
+		</section>
+
+		<footer>
+			<h1>Sources:</h1>
+			https://knowyourmeme.com/memes/long-egg<br>
+			https://developer.mozilla.org/en-US/docs/Web/CSS/length<br>
+			https://www.w3schools.com/cssref/css_units.asp
+		</footer>
+
+	</div> <!-- end wrapper -->
+
+
+</body>
+</html>
