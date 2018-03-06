@@ -207,3 +207,8 @@ p + p {
 .pt img {
 	width: 20pt;
 }
+
+@font-face {
+    font-family: CooperBlack;
+    src: url(style/Cooper.ttf);
+}
