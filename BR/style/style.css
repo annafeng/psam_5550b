@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    /*background-color: blue;*/
+}
+
+video {
+    width: 90vmax;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+
+    /*min-height: 100%;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*z-index: 1;*/
+    /*vertical-align: center;*/
+    /*justify-content: center;*/
+    /*text-align: center;*/
+    
+    /*background-size: cover;*/
+}
+
+.video-container {
+
+}
